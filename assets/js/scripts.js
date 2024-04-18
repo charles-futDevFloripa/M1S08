@@ -30,3 +30,17 @@ document.addEventListener('DOMContentLoaded', function() {
         originalText = !originalText;
     });
 });
+
+// exercício 03
+document.addEventListener('DOMContentLoaded', function() {
+    const addChildButton = document.querySelector('#add-child button');
+    addChildButton.addEventListener('click', function() {
+        const parentDiv = document.getElementById('add-child-text'); // Seleciona a div 
+                const newElement = document.createElement('p'); // Cria um parágrafo <p>
+        newElement.textContent = 'Oi eu sou o filho'; // texto do novo elemento
+        newElement.style.backgroundColor = '#508aa8ff'; 
+        newElement.style.padding = 20 + 'px'; 
+        parentDiv.appendChild(newElement); // Adiciona o novo elemento como filho 
+    });
+});
+
