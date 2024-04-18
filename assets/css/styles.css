@@ -1,8 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --nyanza: #d4f4ddff;
   --rusty-red: #d62246ff;
   --violet-jtc: #4b1d3fff;
-  --nyanza-alpha: hsla(137, 59%, 89%, 1);
-  --rusty-red-alpha: hsla(348, 73%, 49%, 1);
-  --violet-jtc-alpha: hsla(316, 44%, 20%, 1);
+  --air-force-blue: #508aa8ff;
+  --nyanza-alpha: rgba(212, 244, 221, 0.6);
+  --rusty-red-alpha: rgba(214, 34, 70, 0.6);
+  --violet-jtc-alpha: rgba(75, 29, 63, 0.6);
+  --air-force-blue-alpha: rgba(80, 138, 168, 0.6);
+  --font: 'Kanit', sans-serif;
+}
+
+
+
+html,
+body {
+  padding: 20px 0;
+  margin: 0;
+  background-image: url('/assets/img/background.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  background-color: var(--violet-jtc-alpha);
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 0 var(--violet-jtc-alpha);
+  padding: 20px;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--rusty-red-alpha);
+  box-shadow: 3px 3px 1px 0 var(--violet-jtc-alpha);
+  color: var(--nyanza);
+  gap: 10px;
+}
+
+.task-title {
+  display: flex;
+}
+
+.task-number {
+  background-color: var(--violet-jtc-alpha);
+  color: var(--nyanza);
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+
+.task-title-text {
+  color: var(--nyanza);
+  font-size: 20px;
+  padding: 5px;
+}
+
+button {
+  width: auto;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--nyanza-alpha);
+  background-color: var(---violet-jtc);
+  font-family: var(--font);
+  color: var(--nyanza);
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  /* brinca com transições para efeitos no botão */
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+button:hover,
+focus {
+  /* Muda a cor de fundo quando o mouse está sobre o botão */
+  background-color: var(--nyanza);
+  /* Muda a cor do texto para contraste */
+  color: var(--violet-jtc);
+  /* Muda a cor da borda para um destaque sutil */
+  border-color: var(--rusty-red-alpha);
+
 }
