@@ -44,3 +44,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// exercício 04
+document.addEventListener('DOMContentLoaded', function() {
+    const addChildButton = document.querySelector('#add-child-button');
+    const removeChildButton = document.querySelector('#remove-child-button');
+    const parentDiv = document.getElementById('add-child-text-to-remove'); // Div para add ou remove
+    addChildButton.addEventListener('click', function() {
+        const newElement = document.createElement('p');
+        newElement.textContent = 'Sou filho';
+        newElement.style.backgroundColor = '#508aa8ff'; 
+        newElement.style.padding = 20 + 'px'; 
+        newElement.classList.add('child-element'); // A idéia aqui é adicionar um classe para ajudar a remover depois
+        parentDiv.appendChild(newElement);
+    });
+    removeChildButton.addEventListener('click', function() {
+        const lastChild = parentDiv.querySelector('.child-element:last-child'); // usa a classe de auxilio para ir removendo
+        if (lastChild) {
+            parentDiv.removeChild(lastChild); // Remove o último filho
+        } else {
+            alert('Não há mais elementos para remover!'); 
+        }
+    });
+});
+
+
