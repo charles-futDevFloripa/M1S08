@@ -79,6 +79,18 @@ body {
   padding: 5px;
 }
 
+.task-action {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+
+.chage-text-in-class {
+  background-color: var(--violet-jtc-alpha);
+  padding: 5px 10px;
+}
+
 button {
   width: auto;
   padding: 5px;
