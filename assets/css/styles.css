@@ -1,0 +1,8 @@
+:root {
+  --nyanza: #d4f4ddff;
+  --rusty-red: #d62246ff;
+  --violet-jtc: #4b1d3fff;
+  --nyanza-alpha: hsla(137, 59%, 89%, 1);
+  --rusty-red-alpha: hsla(348, 73%, 49%, 1);
+  --violet-jtc-alpha: hsla(316, 44%, 20%, 1);
+}
