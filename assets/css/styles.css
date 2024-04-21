@@ -117,3 +117,70 @@ focus {
   border-color: var(--rusty-red-alpha);
 
 }
+
+input {
+
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--violet-jtc);
+  background-color: var(--nyanza);
+  font-family: var(--font);
+  color: var(--rusty-red);
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--violet-jtc-alpha);
+  box-shadow: 0 0 8px rgba(75, 29, 63, 0.6);
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 10px;
+  width: 100%;
+  background-color: var(--nyanza-alpha);
+  border-radius: 10px;
+  color: var(--violet-jtc);
+}
+
+.list {
+  margin-left: 50px;
+}
+
+.list button {
+  width: auto;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--violet-jtc);
+  background-color: var(--violet-jtc-alpha);
+  font-family: var(--font);
+  color: var(--nyanza);
+  margin-left: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.list button:hover,
+focus {
+  background-color: var(--rusty-red);
+  color: var(--nyanza);
+  border-color: var(--rusty-red-alpha);
+
+}
+
+.done {
+  text-decoration: line-through;
+  color: rgb(61, 116, 3);
+}
+
+a {
+  color: var(--nyanza-alpha);
+}
