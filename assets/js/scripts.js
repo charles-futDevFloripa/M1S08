@@ -90,6 +90,21 @@ document.addEventListener('DOMContentLoaded', function () {
   const addClassButton = document.querySelector('#add-class button');
   addClassButton.addEventListener('click', function () {
     const targetElement = document.getElementById('add-class-here');
-    targetElement.classList.add('chage-text-in-class'); // Adiciona a classe ao elemento com id add-class-here
+    targetElement.classList.add('chage-text-in-class'); // Adiciona a classe ao elemento com id add-class-here o targetElement
+  });
+});
+
+//exercicio 07
+document.addEventListener('DOMContentLoaded', function () {
+  const addButton = document.getElementById('btn-add-class');
+  const removeButton = document.getElementById('btn-remove-class');
+  const targetElement = document.getElementById('add-class-to-remove-here');
+
+  addButton.addEventListener('click', function () {
+    targetElement.classList.add('chage-text-in-class'); // Basicamente o que foi feito no exercicio 06
+  });
+
+  removeButton.addEventListener('click', function () {
+    targetElement.classList.remove('chage-text-in-class'); // Remove a classe do elemento
   });
 });
