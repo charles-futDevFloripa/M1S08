@@ -84,3 +84,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+//exercício 06
+document.addEventListener('DOMContentLoaded', function () {
+  const addClassButton = document.querySelector('#add-class button');
+  addClassButton.addEventListener('click', function () {
+    const targetElement = document.getElementById('add-class-here');
+    targetElement.classList.add('chage-text-in-class'); // Adiciona a classe ao elemento com id add-class-here
+  });
+});
