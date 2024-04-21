@@ -118,5 +118,26 @@ document.addEventListener('DOMContentLoaded', function () {
       'title',
       'Atributo title adicionado.Agora você vê uma tooltip ao passar o mouse!'
     );
+    targetElement.textContent = 'ATRIBUTO TITLE ADICIONADO';
+  });
+});
+
+//exercício 09
+document.addEventListener('DOMContentLoaded', function () {
+  const addButton = document.getElementById('btn-add-attribute');
+  const removeButton = document.getElementById('btn-remove-attribute');
+  const targetElement = document.querySelector(
+    '.attribute-added-to-remove-here'
+  );
+  addButton.addEventListener('click', function () {
+    targetElement.setAttribute(
+      'title',
+      'Agora você vê uma tooltip ao passar o mouse!'
+    );
+    targetElement.textContent = 'ATRIBUTO TITLE ADICIONADO'; // Muda o texto ao adicionar o atributo
+  });
+  removeButton.addEventListener('click', function () {
+    targetElement.removeAttribute('title');
+    targetElement.textContent = 'ATRIBUTO TITLE REMOVIDO'; // Muda o texto ao remover o atributo
   });
 });
