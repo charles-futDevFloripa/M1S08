@@ -108,3 +108,15 @@ document.addEventListener('DOMContentLoaded', function () {
     targetElement.classList.remove('chage-text-in-class'); // Remove a classe do elemento
   });
 });
+
+//exercício 08
+document.addEventListener('DOMContentLoaded', function () {
+  const addAttributeButton = document.querySelector('#add-attribute button');
+  addAttributeButton.addEventListener('click', function () {
+    const targetElement = document.querySelector('.attribute-added-here');
+    targetElement.setAttribute(
+      'title',
+      'Atributo title adicionado.Agora você vê uma tooltip ao passar o mouse!'
+    );
+  });
+});
